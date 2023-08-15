@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MWA_fma</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/main.css">  
+    <script src="https://kit.fontawesome.com/25e71e3313.js" crossorigin="anonymous"></script>  
+    
+  </head>
+  <body>
+        <header class="container border mt-2">
+            <div class="row">
+                <div class="col-xl-12  ">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light m-2  border p-2"> <!--centering navbar with margin-1-->
+                        <a class="navbar-brand" href="#">
+                             <img src="../img/cs-logo.png" alt="logo" width="35" height="37">
+                          <p class="d-block d-sm-none">CityScoot</p> 
+                        </a>
+                        <button class="navbar-toggler  m-4" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                          
+                            <li class="nav-item "> 
+                              <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="route.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Routes
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="routes.html">Routes</a>
+                                  <a class="dropdown-item" href="../pages/favorites.html">Favorites</a>
+                                </div>
+                              </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="guides.html">Guides</a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="scooter.html">Scooter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="safety.html">Safety</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>  
+                            <li class="nav-item">
+                              <span data-toggle="tooltip" data-placement="right" title="Log in">
+                                <a class="nav-link" href="../pages/login.html"><i class="fas fa-user"></i></a>
+                              </span>
+                            </li>  
+                          </ul>
+                        </div>
+                        <nav  class="d-none d-lg-block " aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item active">
+                             <a class="nav-link my2" href="contact.html">Sign Up</a>
+                            </li>
+                          </ol>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+        <div class="container border my-2">
+          <div class="row">
+              <div class="col">
+                  <!--jumbotron box-->
+                  <div class="jumbotron jumbotron-fluid  border mt-2 text-center"  >
+                    <div class="container">
+                      <h1 class="display-6 text-primary ">CityScoot | Favorites</h1>
+                      <hr class="my-4 bg-primary">
+                      <a class="btn btn-outline-info btn-lg  my-2" href="../pages/routes.html" role="button">Routes</a>
+                    </div>
+                 </div>    
+               </div> 
+          </div>   
+         
+          <!-- source: https://getbootstrap.com/docs/4.0/content/tables/-->
+          <section> 
+            <div class="container border my-2">    
+              <div class="row table-responsive ">  
+                <table class="table  table-bordered border-info m-2" id="routestable">
+                  <thead class="bg-info">  
+                    <tr>
+                    <th scope="col">Tour Name</th>
+                      <th scope="col">Day</th>
+                      <th scope="col">Time</th>
+                      <th scope="col" class="text-center">Highlights</th>
+                      <th scope="col">Details</th>
+                      <th scope="col">Remove</th>
+                    </tr>
+                  </thead>
+                  <tbody id="insert-route-data">
+                    <!--info here-->
+                  </tbody>
+                </table>
+                    <div class="alert" role="alert" id="statusRoutesMsg">
+                    </div>  
+
+                  <!--modal when remove item is pressed-->  
+                    <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="delete-modal" aria-hidden="true">
+                      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title">Favorites</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                  <p>Favorite Removed</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>             
+            </div> 
+          </section>        
+        </div> 
+
+                 
+         <!--footer-->
+        <footer class="container  my-2 border bg-success">
+            <div class="row text-center">
+              <div class="col mt-4 ">
+                <a class="p-2 text-decoration-none" href="#">Accsesibility</a>
+                <a class="p-2 text-decoration-none" href="#">Privacy</a>
+                <a class="p-2 text-decoration-none" href="#">Coorporate</a>
+                <hr>
+                <p class="text-muted">© 2021 Copyright by Carmen Sedeño</p>
+              </div>
+            </div>        
+        </footer>
+
+        <!-- Get-route-details  and add-favorites js code-->
+       <script src="../scripts/get-favorites-routes.js"></script>
+       
+
+    
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+   
+    </body>
+  </html>

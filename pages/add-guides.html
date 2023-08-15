@@ -1,0 +1,220 @@
+
+<!-- This page is only accesible for authorize staff to add a new guides -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MWA_fma</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/main.css">    
+    <script src="https://kit.fontawesome.com/267ddf6808.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+        <header class="container border mt-2">
+            <div class="row">
+                <div class="col-xl-12  ">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light m-2  border p-2"> <!--centering navbar with margin-1-->
+                        <a class="navbar-brand" href="#">
+                             <img src="../img/cs-logo.png" alt="logo" width="35" height="37">
+                          <p class="d-block d-sm-none">CityScoot</p> 
+                        </a>
+                        <button class="navbar-toggler  m-4" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                          
+                            <li class="nav-item "> 
+                              <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="route.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Routes
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="routes.html">Routes</a>
+                                  <a class="dropdown-item" href="../pages/favorites.html">Favorites</a>
+                                </div>
+                              </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="guides.html">Guides</a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="scooter.html">Scooter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="safety.html">Safety</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li> 
+                            <li class="nav-item">
+                              <span data-toggle="tooltip" data-placement="right" title="Log in">
+                                <a class="nav-link" href="pages/login.html"><i class="fas fa-user"></i></a>
+                              </span>
+                            </li>  
+                          </ul>
+                        </div>
+                        <nav  class="d-none d-lg-block " aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item active">
+                             <a class="nav-link my2" href="contact.html">Sign Up</a>
+                            </li>
+                          </ol>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+        <!--main content-->
+        <div class="container border my-2">
+              <div class="row">
+                  <div class="col">
+                      <!--jumbotron box-->
+                      <div class="jumbotron jumbotron-fluid  border mt-2 text-center"  >
+                          <div class="container">
+                            <h1 class="display-6 text-primary">CityScoot | Guides</h1>
+                            <hr class="my-4 bg-primary">
+                            <a class="btn btn-outline-info btn-lg  my-2" href="#guides" role="button">Read More</a>
+                          </div>
+                      </div>
+                  </div>    
+              </div> 
+              <!--section-->
+            <article class="mt-2">
+              <div class="container border  " id="central">
+                  <div class="row no-gutters">
+                      <div class="col-sm-12  col-lg-12  text-left p-4"> 
+                        <h3><span class="text-danger">*</span>Add New Guides</h3>
+                        <p class="mr-3"> <span class="fs-5 text-danger">Just For Authorized Stuff:</span> Use this form to update  or add new guides to our database,
+                          all fields are required , for more information please check our  <a class="p-2" href="#">policy</a>for new guides.  
+                        </p>
+                      </div>
+                  </div>
+              </div>
+            </article>  
+            <!--section-->
+            <div class="container " id="guides">
+                <div class="row">
+                  <div class="col">
+                    <div  class="alert alert-success mt-3" role="alert">
+                      <h5>Please introduce guide information</h5>
+                      <h4 id="msgConfirmation" class="my-2 text-warning"></h4>
+                     
+                    </div>
+                  </div>        
+                </div>
+            </div> 
+
+            <div class="container p-4 my-2 border " >
+            <!--form to add new guides-->
+              <form id="guideForm"> 
+                <div class="row mb-2">
+                    <div class="col-sm-2">
+                        <label for="inputGuideId">Guide ID</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="inputGuideId" required>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-2">
+                        <label for="inputGuideName">First Name:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="inputGuideName" required>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-2">
+                        <label  for="inputGuideLastName">Last Name:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="inputGuideLastName" required>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-2">
+                        <label for="inputGuideAge">Age:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="inputGuideAge" required>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-2 ">
+                        <label for="inputGuideOcuppation">Ocupation:</label>
+                    </div>
+                    <div class="col-sm-10 ">
+                        <textarea class="form-control"  id="inputGuideOcuppation" required></textarea>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-2">
+                        <label for="guideBadge">Blue Badge:</label>
+                    </div>
+                    <div class="col-sm-10 ">
+                      <select class="custom-select" id="guideBadge">
+                        <option>YES</option>
+                        <option>NO</option>
+                      </select>
+                    </div>   
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-2 ">
+                        <label for="inputGuideTours">Tours:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <textarea class="form-control"  id="inputGuideTours" required></textarea>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-2">
+                      <label for="inputGuideImage">Image:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <textarea class="form-control"  id="inputGuideImage" required></textarea>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-2">
+                      <!--intentionally left blank-->
+                      
+                    </div>
+                    <div class="col-sm-10">
+                        <button  type="submit" class="btn btn-primary w-100">Submit</button>
+                    </div>
+                </div>
+              </form>
+            </div>   
+        </div>               
+         <!--footer-->
+         <footer class="container  my-2 border bg-success">
+          <div class="row text-center">
+            <div class="col mt-4 ">
+              <a class="p-2 text-decoration-none" href="#">Accsesibility</a>
+              <a class="p-2 text-decoration-none" href="#">Privacy</a>
+              <a class="p-2 text-decoration-none" href="#">Coorporate</a>
+              <hr>
+              <p class="text-muted">© 2021 Copyright by Carmen Sedeño</p>
+            </div>
+          </div>        
+        </footer>
+
+      <!--Firebase links-->
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+      <script src="../scripts/add-guides-info.js"></script>
+
+      
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

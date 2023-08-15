@@ -1,0 +1,6 @@
+// function to create a new color
+
+
+@function set-color($hover1){
+    @return $hover1;
+}

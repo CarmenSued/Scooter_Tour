@@ -1,0 +1,35 @@
+@import "../scss/functions.scss";
+
+//import new font style:
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+$project_font: 'Varela', sans-serif;
+
+// override font variable with the new font
+$font-family-base: $project_font;
+
+// declare new variables
+$underline-none: none;
+$medium-color: rgb(202, 228, 219);
+$aqua-color:  rgb(174, 255, 248); 
+$light-color:  rgb(14, 53, 158);
+
+// override sass variables
+$primary : rgb(58, 124, 168);
+$success :$medium-color;
+
+$navbar-light-color: rgb(56, 172, 147);
+$light: rgb(228, 250, 247);
+
+// apply function with a new color for hovering on links
+$hover1:rgb(230, 120, 17);
+$link-hover-color: set-color($hover1);
+
+/* ----- Overriding CSS --------*/
+#central{
+    background-color:       $aqua-color;
+}
+h5{
+    color:                   $light-color;
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
