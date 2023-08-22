@@ -1,12 +1,12 @@
 // firebase configuration
 const firebaseConfig = {
-	apiKey: "AIzaSyAbjZCUzSU3Fb96IVKXpNC7N8aZIhy091U",
-	authDomain: "mwa-fma-ae774.firebaseapp.com",
-	databaseURL: "https://mwa-fma-ae774-default-rtdb.firebaseio.com",
-	projectId: "mwa-fma-ae774",
-	storageBucket: "mwa-fma-ae774.appspot.com",
-	messagingSenderId: "756828833443",
-	appId: "1:756828833443:web:d4cac570b8353a346ae116"
+	apiKey: "",
+	authDomain: "",
+	databaseURL: "",
+	projectId: "",
+	storageBucket: "",
+	messagingSenderId: "",
+	appId: ""
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
